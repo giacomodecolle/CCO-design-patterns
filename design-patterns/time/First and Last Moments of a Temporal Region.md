@@ -1,7 +1,10 @@
 graph BT
-    A{Hour-Long Temporal Region} -->|rdf:type| B[Temporal Region BFO_0000008]
-    C{Beginning Moment of Hour} -->|first instant of BFO_0000221| A
-    D{Ending Moment of Hour} -->|last instant of 
+    A{Hour-Long
+    Temporal Region 1} -->|rdf:type| B[Temporal Region BFO_0000008]
+    C{Beginning Moment
+    of Hour 1} -->|first instant of BFO_0000221| A
+    D{Ending Moment
+    of Hour 1} -->|last instant of 
     BFO_0000223| A
     C -->|precedes 
     BFO_0000063| D
