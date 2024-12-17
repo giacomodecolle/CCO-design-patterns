@@ -1,0 +1,13 @@
+graph BT
+   A{Process
+   Annual Marathon} -->|rdf:type| B[Process<br>BFO_0000015]
+   A -->|occurs at| C{Site 
+   Central Park, NYC}
+   C -->|rdf:type| D[Site<br>BFO_0000029]
+   A -->|occurs in| E{Spatiotemporal Region 
+   Marathon Event }
+   E -->|rdf:type| F[Spatiotemporal Region<br>BFO_0000154]
+   classDef yellow fill:#ffe680,stroke:#000000
+   classDef purple fill:#dbc9ef,stroke:#000000,shape:diamond
+   class A,C,E purple
+   class B,D,F yellow
