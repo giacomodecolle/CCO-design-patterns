@@ -1,0 +1,14 @@
+flowchart BT
+   A{"Industrial Container"} -- rdf:type --> B["Independent Continuant<br>BFO_0000004"]
+   A -- located in<br>BFO_0000171 --> C{"Warehouse Site"}
+   A -- occupies spatial region<br>BFO_0000210 --> D{"Storage Area"}
+   C -- rdf:type --> E["Site<br>BFO_0000029"]
+   D -- rdf:type --> F["Spatial Region<br>BFO_0000006"]
+    A:::purple
+    B:::yellow
+    C:::purple
+    D:::purple
+    E:::yellow
+    F:::yellow
+   classDef yellow fill:#ffe680,stroke:#000000
+   classDef purple fill:#dbc9ef,stroke:#000000,shape:diamond
