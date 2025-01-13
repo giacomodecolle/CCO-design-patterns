@@ -1,0 +1,15 @@
+graph BT
+    B{Hurricane Description 1} -->|rdf:type| E[Descriptive Information Content Entity<br>ont00000853]
+    B -->|generically depends on<br>BFO_0000084| A{Physical Newspaper 1}
+    A -->|rdf:type| C[Information Bearing Entity<br>ont00000253]
+    A -->|has text value<br>ont00001765| D[64F Mostly Cloudy]
+    B -->|describes<br>ont00001982| F{Hurricane 1}
+    F -->|rdf:type| G[Process<br>BFO_0000015]
+
+classDef yellow fill:#ffe680
+classDef purple fill:#dbc9ef
+classDef white fill:#ffffff
+
+class C,E,G yellow
+class A,B,F purple
+class D white
