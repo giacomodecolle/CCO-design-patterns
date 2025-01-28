@@ -15,7 +15,7 @@ The current style choice is the following:
 - Shortened IRI/identifier for the classes
 - Labelled nodes for object properties
 - Shortened IRI/identifier for object properties
-- Full names for instances with numbers
+- Explicit names as examples for instances, e.g. "Giacomo" instead of "Person 1"
 
 A tool to create and edit Mermaid can be found here:
 
