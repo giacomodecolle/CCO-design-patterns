@@ -1,0 +1,10 @@
+graph BT
+    A{John Doe 1} -->|rdf:type| D[Person<br>ont00001262]
+    B{John Doe's Name 1} -->|rdf:type| E[Designative Information Content Entity<br>ont00000686]
+    B -->|designates<br>ont00001916| A
+
+classDef yellow fill:#ffe680
+classDef purple fill:#dbc9ef
+
+class D,E yellow
+class A,B purple
