@@ -1,0 +1,30 @@
+graph BT
+        A{plan 1} --->|mro:prescribes ont00001942| B{planned mission 1}
+        A --->|prescribes ont00001942| C{actual mission 1}
+        B --->|mro:has participant BFO_0000057| D{Los Angeles-class submarine 1}
+        D --->|rdfs:label| E[USS Bremerton]
+        B --->|mro:occupies temporal region BFO_0000199| F{day 1}
+        F --->|rdfs:label| G[2017-04-25]
+        B --->|rdf:type| M[Planned Act
+        ont00000228]
+        C --->|rdf:type| M
+        A --->|rdf:type| O[Plan
+        ont00000974]
+        C --->|has participant BFO_0000057| H{Los Angeles-class submarine 2}
+        H --->|rdfs:label| I[USS Dallas]
+        C --->|occupies temporal region BFO_0000199| F 
+        D --->|rdf:type| J[Watercraft
+        ont00000440]
+        H --->|rdf:type| L[Watercraft
+        ont00000440]
+        F --->|rdf:type| K[Day
+        ont00000800]
+        N[rdfs:label is being used as a shortcut property. The label for 'day 1' could be presented more accurately with an information entity about this day that has a 'has date value' data property, but this is more complicated.]
+
+
+    classDef yellow fill:#ffe680
+    classDef purple fill:#dbc9ef
+    classDef white fill:#ffffff
+    class J,K,L,M,O yellow
+    class A,B,C,D,E,F,H purple
+    class G,E,I,N white
