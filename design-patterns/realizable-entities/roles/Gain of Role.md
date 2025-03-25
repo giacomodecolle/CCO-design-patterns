@@ -7,7 +7,7 @@ graph BT
     A --->|participates in<br><b>BFO:0000056</b>| E{<span style="color:black"><b>Gain of Role 1</b></span><br>}
     E --->|Instance of| F[<span style="color:black"><b>Gain of Role</b><b><br>ont00001194</b><br>]
     F --->|is subclass of| G[<span style="color:black"><b>Change</b><br><b>ont00000004</b></span><br>]
-    E --->|occurs at <br>ont00001918| H{<span style="color:black"><b>Temporal Interval 1</b></span><br>}
+    E --->|occupies temporal region <br>ont0000199| H{<span style="color:black"><b>Temporal Interval 1</b></span><br>}
     H --->|Instance of| I[<span style="color:black"><b>Temporal Interval</b><br><b>BFO:0000202</b></span><br>]
     
 
