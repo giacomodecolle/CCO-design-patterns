@@ -1,7 +1,7 @@
 graph BT
-    A{Measurement of Pencil Mass} --->|rdf:type| B[Measurement Information Content Entity
+    A{Measurement of Pencil Mass 1} --->|rdf:type| B[Measurement Information Content Entity
     ont00001163]
-    A --->|generically depends on BFO_0000084| C{Balance Display}
+    A --->|generically depends on BFO_0000084| C{Balance Display 1}
     C --->|rdf:type| D[Information Bearing Entity ont00000253]
     C --->|uses measurement unit ont00001863| E{Gram Measurement Unit}
     E --->|rdf:type| F[Measurement Unit of Mass ont00000239]
