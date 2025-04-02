@@ -1,0 +1,12 @@
+graph TD;
+    A["inch measurement unit"] -->|uses measurement unit| B["information bearing entity 1"];
+    C["centimeter measurement unit"] -->|uses measurement unit| D["information bearing entity 2"];
+    
+    B -->|generically depends on| E["measurement information content entity 1"];
+    D -->|generically depends on| E;
+    
+    B -->|has integer value| F["1"];
+    D -->|has decimal value| G["2.54"];
+    
+    E -->|is measured by| H["length 1"];
+    H -->|has quality| I["object 1"];
