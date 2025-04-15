@@ -1,0 +1,20 @@
+%% Design Pattern: Tracking Spatiotemporal and Temporal Information for Processes
+graph BT
+A{Music Festival
+1} -->|rdf:type
+| B[Process
+BFO_0000015]
+A -->|occupies_spatiotemporal_region
+BFO_0000200| C{Golden Gate Park, San Francisco during July 12-14}
+C -->|rdf:type
+| D[Spatiotemporal_Region
+BFO_0000011]
+A -->|occupies_temporal_region
+BFO_0000199| E{Festival Weekend July 12–14 2024}
+E -->|rdf:type
+| F[Temporal_Region BFO_0000008]
+
+classDef yellow fill:#ffe680,stroke:#000000
+classDef purple fill:#dbc9ef,stroke:#000000,shape:diamond
+class A,C,E purple
+class B,D,F yellow
