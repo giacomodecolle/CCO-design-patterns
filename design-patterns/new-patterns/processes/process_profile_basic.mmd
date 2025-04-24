@@ -1,0 +1,33 @@
+graph TB
+
+AA{x axis movement}
+
+CC{y axis movement}
+
+DD{z axis movement}
+
+
+AA --> |part of| ABC{Movement Process}
+
+CC --> |part of| ABC{Movement Process}
+
+DD --> |part of| ABC{Movement Process}
+
+ABC --> |rdf:type| ABCD[Process]
+
+
+AA --> |rdf:type| AAA[Process Profile]
+
+CC --> |rdf:type| AAA
+
+DD --> |rdf:type| AAA
+
+
+
+classDef yellow fill:#ffe680
+classDef purple fill:#dbc9ef
+classDef white fill:#ffffff
+
+class A,B,C,D,E,F,H,AA,CC,DD,ABC purple
+class G,GG,AAA,ABCD,GGG yellow
+class F white
