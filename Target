@@ -1,13 +1,30 @@
----
-config:
-  theme: redux
----
-flowchart TD
+flowchart TB
+    A["Aldo Moro"] -- is object of --> B("Act_of_Targeting")
+    C["Red Brigades"] -- Participates in --> B
+    A -- Instance_of --> D["Target"]
+    C -- part_of --> E["Organisation"]
+    F["Continuant"]
+    G("Occurrent")
 
-A[Aldo Moro] --> |is object of| B(Act of Targeting)
-C[Red Brigades] --> |Participates in| B(Act_of_Targeting)
-A[Aldo Moro] --> |Instance_of| D[Target]
-C[Red Brigades]--> |part_of| E[Organisation]
+     A:::Class_02
+     B:::Class_08
+     C:::Class_03
+     D:::Class_05
+     E:::Class_06
+     F:::Class_04
+     G:::Class_07
+    classDef Class_02 fill:#ffe680
+    classDef Class_03 fill:#ffe680
+    classDef Class_04 fill:#ffe680
+    classDef Class_05 fill:#ffe680
+    classDef Class_06 fill:#ffe680
+    classDef Class_07 fill:#dbc9ef
+    classDef Class_08 fill:#dbc9ef
+    style A stroke:#000000,stroke-width:1px,stroke-dasharray: 0
+    style B stroke:#000000,stroke-width:1px,stroke-dasharray: 0
+    style C stroke:#000000,stroke-width:1px,stroke-dasharray: 0
+    style D stroke:#000000,stroke-width:1px,stroke-dasharray: 0
+    style E stroke:#000000,stroke-width:1px,stroke-dasharray: 0
+    style F stroke:#000000,stroke-width:1px,stroke-dasharray: 0
+    style G stroke:#000000,stroke-width:1px,stroke-dasharray: 0
 
-F[Continuant]
-G(Occurrent)
