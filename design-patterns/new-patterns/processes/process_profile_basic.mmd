@@ -24,9 +24,25 @@ DD --> |rdf:type| AAA
 
 
 
+    subgraph Legend
+    AAAA{Individual}
+    BBBB[Class]
+    CCCC[data]
+    BBBB --> |relation| CCCC
+    DDDD[This pattern uses movement 
+    in space as an example but can be reused for other
+    types of process profiles, which are akin to qualities of processes, 
+    such as the rhythm and pressure of the pumping of a heart, or the frequency of 
+    payments in a bank ] 
+
+     
 classDef yellow fill:#ffe680
 classDef purple fill:#dbc9ef
 classDef white fill:#ffffff
+class BBBB yellow
+class AAAA purple
+class CCCC white
+end
 
 class A,B,C,D,E,F,H,AA,CC,DD,ABC purple
 class G,GG,AAA,ABCD,GGG yellow
