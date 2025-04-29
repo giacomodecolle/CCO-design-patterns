@@ -1,0 +1,13 @@
+---
+config:
+  theme: redux
+---
+flowchart TD
+
+A[Aldo Moro] --> |is object of| B(Act of Targeting)
+C[Red Brigades] --> |Participates in| B(Act_of_Targeting)
+A[Aldo Moro] --> |Instance_of| D[Target]
+C[Red Brigades]--> |part_of| E[Organisation]
+
+F[Continuant]
+G(Occurrent)
