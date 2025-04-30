@@ -1,26 +1,29 @@
 flowchart TB
-    C{"Red Brigades"} --Agent_in_ont00001787 --> B{"Targeting_Moro"}
-    A{"Aldo Moro"} -- rdf:type --> D["Target"_ont00000544]
+    C{"Red Brigades"} -- Agent_in_ont00001787 --> B{"Targeting_Moro"}
+    A{"Aldo Moro"} -- rdf:type --> D["Target_ont00000544"]
     A -- is object of
-    ont00001936--> H
-    C -- rdf:type --> E["Agent"_ont00001017]
-    D -- rdf:type --> g["Material_Entity" BFO_0000040]
-    B -- rdf:type --> H["Act_of_Targeting"_ont00000741]
+    ont00001936 --> B
+    C -- rdf:type --> E["Agent_ont00001017"]
+    D -- subclass_of --> g["Material_Entity BFO_0000040"]
+    B --subclass_of --> H["Act_of_Targeting"_ont00000741]
+
+
 
      C:::Class_03
      C:::Class_11
      B:::Class_08
      B:::Class_19
+     B:::Class_21
      A:::Class_02
      A:::Class_10
      D:::Class_05
      D:::Class_12
      D:::Class_17
+     H:::Class_20
      E:::Class_06
      E:::Class_13
      E:::Class_18
      g:::Class_09
-     H:::Class_20
     classDef Class_02 fill:#ffe680
     classDef Class_03 fill:#ffe680
     classDef Class_04 fill:#ffe680
@@ -40,11 +43,13 @@ flowchart TB
     classDef Class_19 fill:#ffe680
     classDef Class_09 fill:#ffe680
     classDef Class_20 fill:#ffe680
+    classDef Class_21 fill:#dbc9ef
     style C stroke:#AA00FF,stroke-width:1px,stroke-dasharray: 0
     style B stroke:#AA00FF,stroke-width:1px,stroke-dasharray: 0
     style A stroke:#AA00FF,stroke-width:1px,stroke-dasharray: 0
     style D stroke:#AA00FF,stroke-width:1px,stroke-dasharray: 0
+    style H stroke:#E1BEE7
     style E stroke:#AA00FF,stroke-width:1px,stroke-dasharray: 0
     style g stroke:#E1BEE7
-    style H stroke:#E1BEE7
+
 
