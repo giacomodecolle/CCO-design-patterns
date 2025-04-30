@@ -1,5 +1,5 @@
 flowchart TB
-    C{"Red Brigades"} --Agent_in_ont00001787 --> B["Targeting_Moro"]
+    C{"Red Brigades"} --Agent_in_ont00001787 --> B{"Targeting_Moro"}
     A{"Aldo Moro"} -- rdf:type --> D["Target"_ont00000544]
     A -- is object of
     ont00001936--> H
