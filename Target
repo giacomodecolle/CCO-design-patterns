@@ -1,28 +1,30 @@
 flowchart TB
-    A{"Aldo Moro"} -- is object of --> B{"Act_of_Targeting"}
-    C{"Red Brigades"} -- Participates in --> B
-    A -- rdf:type --> D{"Target"}
-    C -- part_of --> E{"Organisation"}
-    F["BFO:_Process"]
-    G["BFO:_Continuant"]
-    A-->|is a|G
-    C-->|is a|G
-    D-->|is a|G
-    E-->|is a|G
-    B-->|is a|F
+    
+    C{"Red Brigades"} -- Participates in --> B[Act_of_Targeting]
+    A{"Aldo Moro"} -- rdf:type --> D["Target"]
+    D-->|is object of| B[Act_of_Targeting]
+    C -- part_of --> E["Organisation"]
+    A -- is a --> G["BFO:_Continuant"]
+    C -- is a --> G
+    D -- is a --> G
+    E -- is a --> G
+    B -- is a --> F["BFO:_Process"]
 
      A:::Class_02
      A:::Class_10
      B:::Class_08
+     B:::Class_19
      C:::Class_03
      C:::Class_11
      D:::Class_05
      D:::Class_12
+     D:::Class_17
      E:::Class_06
      E:::Class_13
-     F:::Class_16
+     E:::Class_18
      G:::Class_14
      G:::Class_15
+     F:::Class_16
     classDef Class_02 fill:#ffe680
     classDef Class_03 fill:#ffe680
     classDef Class_04 fill:#ffe680
@@ -38,10 +40,13 @@ flowchart TB
     classDef Class_14 fill:#ffe680
     classDef Class_15 stroke:transparent
     classDef Class_16 fill:#ffe680
+    classDef Class_17 fill:#ffe680
+    classDef Class_18 fill:#ffe680
+    classDef Class_19 fill:#ffe680
     style A stroke:#AA00FF,stroke-width:1px,stroke-dasharray: 0
     style B stroke:#AA00FF,stroke-width:1px,stroke-dasharray: 0
     style C stroke:#AA00FF,stroke-width:1px,stroke-dasharray: 0
     style D stroke:#AA00FF,stroke-width:1px,stroke-dasharray: 0
     style E stroke:#AA00FF,stroke-width:1px,stroke-dasharray: 0
-    style F stroke:#E1BEE7
     style G stroke:#E1BEE7
+    style F stroke:#E1BEE7
