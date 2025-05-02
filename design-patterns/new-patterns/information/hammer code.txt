@@ -1,0 +1,7 @@
+flowchart TD
+id1{agent 1}--rdf:type-->id5(agent)
+id2{hammer}--rdf:type-->id3(material artifact)
+id1--uses-->id2
+id6{hammering}--rdf:type-->id4(planned act)
+id1--participates in-->id6
+id2--participates in-->id6
