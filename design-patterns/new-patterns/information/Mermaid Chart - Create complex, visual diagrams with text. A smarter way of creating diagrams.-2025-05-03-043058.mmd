@@ -1,0 +1,11 @@
+flowchart TD
+    id1{agent 1}--rdf:type-->id2(agent)
+    id1--has capability-->id3{agent capability 1}
+    id3--rdf:type-->id4(agent capability)
+    id5(planned act)
+    id6{planned act 1}--rdf:type-->id5
+    id6--realizes-->id3
+    id7(directive information content entity)
+    id8{directive information content entity}--rdf:type-->id7
+    id8--prescribes-->id6
+    id1--participates in-->id6
