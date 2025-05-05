@@ -1,0 +1,7 @@
+A{Measurement of tree1 height} -->|rdf.type| B{MICE}
+A--|generically depends|-->C{tree1}
+C--rdf.type-->D[information bearing entity]
+C--uses measurement unit -->E{Meters Measurement Unit}
+C--has decimal value-->F(10.2)
+E--rdf.type-->G{measurment unit of length}
+F--rdf.type-->H[specifically dependent continuant]
