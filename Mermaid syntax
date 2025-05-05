@@ -1,0 +1,84 @@
+[THIS ONE IS FOR PLANNED ACTS]
+
+
+
+flowchart TD
+
+    A["BFO_0000015: Act"] -->|RDF: Type| B["BFO_0000083: Process"]
+    F["Josh"] -->|BFO_0000056: Participates In| D["Planned Act"]
+    D -->|RDF: Type| A
+    D -->|Prescribed By| n1["Directive ICE"]
+
+
+    style A fill:#ffe680
+    style B fill:#ffe680
+    style F fill:#dbc9ef
+    style D fill:#ffe680
+    style n1 fill:#ffe680
+
+
+    classDef diam shape:diamond
+    class B,F diam
+
+
+[FOR ROLE CLASS EQUIVALENCY]
+
+---
+config:
+  layout: dagre
+---
+flowchart TD
+    S["Student"] -- OWL_EquivalentClass --> P["Person"]
+    S -- hasRole --> SR["Student Role"]
+    C["Civilian"] -- OWL_EquivalentClass --> P
+    C -- hasRole --> CR["Civilian Role"]
+    Adam["Adam"] -- rdf:type --> P
+    Adam -- hasRole --> SR
+    Josh["Josh"] -- rdf:type --> P
+    Josh -- hasRole --> CR
+    Adam@{ shape: diam}
+    Josh@{ shape: diam}
+    style S fill:#ffe680,stroke:#000,stroke-width:1px,stroke-dasharray: 0
+    style P fill:#ffe680,stroke:#000,stroke-width:1px,stroke-dasharray: 0
+    style SR fill:#ffe680,stroke:#000,stroke-width:1px,stroke-dasharray: 0
+    style C fill:#ffe680,stroke:#000,stroke-width:1px,stroke-dasharray: 0
+    style CR fill:#ffe680,stroke:#000,stroke-width:1px,stroke-dasharray: 0
+    style Adam fill:#dbc9ef,stroke:#000,stroke-width:1px,stroke-dasharray: 0
+    style Josh fill:#dbc9ef,stroke:#000,stroke-width:1px,stroke-dasharray: 0
+
+[FAMILIAL RELATIONS]
+---
+config:
+  layout: dagre
+---
+flowchart TD
+    S["John"] -- Is Child Of --> M["Samantha"] & D1["Mark"]
+    D2["Anna"]-- Is Child Of --> M["Beatrice"] & D1["Alan"]
+    D1 -- Child Of --> M
+    D1 -- Spouse Of --> M
+    M -- Spouse Of --> D1
+    A["Jeanie"] -- Sibling Of --> D1
+    U["Jacob"] -- Spouse Of --> A
+    C["Vinny"] -- Is Child Of --> A & U
+    C -- First Cousin Of --> D2["Anna"]
+        C -- First Cousin Of --> S["John"]
+
+    S@{ shape: diam}
+    M@{ shape: diam}
+    D1@{ shape: diam}
+    A@{ shape: diam}
+    U@{ shape: diam}
+    C@{ shape: diam}
+    D2@{ shape: diam}
+    style S fill:#dbc9ef,stroke:#000,stroke-width:1px
+    style M fill:#dbc9ef,stroke:#000,stroke-width:1px
+    style D1 fill:#dbc9ef,stroke:#000,stroke-width:1px
+    style A fill:#dbc9ef,stroke:#000,stroke-width:1px
+    style U fill:#dbc9ef,stroke:#000,stroke-width:1px
+    style C fill:#dbc9ef,stroke:#000,stroke-width:1px
+    style D2 fill:#dbc9ef,stroke:#000,stroke-width:1px
+
+
+
+
+
