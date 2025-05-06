@@ -1,0 +1,29 @@
+---
+config:
+  theme: redux
+---
+flowchart TD
+    A{"Measurement of tree length"} -- "rdf:type" --> B["Measurement Information Content Entity"]
+    A -- generically_depends_on --> C{"Piece_of_paper"}
+    C -- "rdf:type" --> D["Information Bearing Entity"]
+    C -- is measurement unit of--> E{"Meters Measurement Unit"}
+    C -- has decimal value --> F["10.2"]
+    E -- "rdf.type" --> G["measurement unit"]
+    I{length} --> |rdf:type| H["Entity"]
+    A --> |is measurement of| I
+
+    subgraph Legend
+    AA{Individual}
+    BB[Class]
+    CC[data]
+    BB --> |relation| CC
+    DD[This pattern uses length as examples but can be reused for any other entity such as processes, qualities, people, etc.] 
+
+     
+classDef yellow fill:#ffe680
+classDef purple fill:#dbc9ef
+classDef white fill:#ffffff
+class BB,B,D,G,H yellow
+class AA,A,C,E,I purple
+class CC,F white
+end
