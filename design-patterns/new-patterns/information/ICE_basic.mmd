@@ -1,0 +1,28 @@
+flowchart TB
+    subgraph Legend
+        A{Individual}
+        B[Class]
+        C[data]
+        B --> |relation| C
+    end
+    classDef yellow fill:#ffe680
+    classDef purple fill:#dbc9ef
+    classDef white fill:#ffffff
+    class B yellow
+    class A purple
+    class C white
+
+    %% IAO Classes
+    ICE[Information Content Entity<br>ont00000958]:::yellow
+    IQE[Information Quality Entity<br>ont00000314]:::yellow
+    IBE[Information Bearing Entity<br>ont00000253]:::yellow
+
+    %% Instances
+    DOC1{Dorian Gray text}:::purple -->|rdf:type| ICE
+    PAPER{Dorian Gray physical copy}:::purple -->|rdf:type| IBE
+    IQ1{Ink shapes}:::purple -->|rdf:type| IQE
+
+    %% Relationships
+    DOC1 -->|bearer of - BFO_0000196| IQ1
+    PAPER -->|generically depends on - BFO_0000084| DOC1
+    IQ1 -->|concretizes - BFO_0000059| PAPER
