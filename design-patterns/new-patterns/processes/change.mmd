@@ -1,0 +1,46 @@
+flowchart TB
+    A{Person 1} --->|rdf:type| B[BFO_0000001]
+    A --->|participates in BFO_0000056| F{Change 1}
+
+    F --->|rdf:type| G[Change ont00000824]
+    F -->|occupies temporal region BFO_0000199| H{Temporal Interval 1}
+    H --->|rdf:type| I[Temporal Interval BFO_0000202]
+
+
+    A -->|bearer of BFO_0000177| K{Temperature 1}
+    K --->|rdf:type| L[Quality BFO_0000019]
+
+    M{Measurement 1 at t1} -->|rdf:type| N[Measurement Information Content Entity ont00001163]
+    U -->|has decimal value ont00001769| O[36.6°C]
+    M -->|is a measurement of ont00001966| K
+
+    P{Measurement 2 at t2} -->|rdf:type| Q[Measurement Information Content Entity ont00001163]
+    S -->|has decimal value ont00001769| R[38.2°C]
+    P -->|is a measurement of ont00001966| K
+
+    S{IBE 1} -->|rdf:type| T[Information Bearing Entity ont00000253]
+    S -->|is carrier of BFO_0000084| M
+
+    U{IBE 2} -->|rdf:type| V[Information Bearing Entity ont00000253]
+    U -->|is carrier of BFO_0000084| P
+
+subgraph Legend
+AA{Individual}
+BB[Class]
+CC[data]
+BB --> |relation| CC
+DD[This pattern shows how a certain specifically dependent
+continuant changed. It uses qualities and persons as examples
+but different examples could be used. It also uses 
+measurement information content entities to display how 
+the quality changes, although this is technically not needed
+for the pattern to work. Measurements are done at two different times
+although this is not fully represented.] 
+
+classDef yellow fill:#ffe680
+classDef purple fill:#dbc9ef
+classDef white fill:#ffffff
+class BB,B,G,I,L,N,Q,T,V yellow
+class AA,A,F,H,K,M,P,S,U purple
+class CC,J,O,R white
+end
