@@ -1,0 +1,9 @@
+graph BT
+    A{Military Reconnaissance  1} -->|rdf:type| D[Planned Act<br>ont00000228]
+    B{Reconnaissance Plan 1} -->|rdf:type| E[Directive Information Content Entity<br>ont00000965]
+    B -->|prescribes<br>mro/ont00001942| A
+
+classDef yellow fill:#ffe680
+classDef purple fill:#dbc9ef
+class D,E yellow
+class A,B purple
