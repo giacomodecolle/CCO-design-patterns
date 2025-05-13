@@ -1,0 +1,22 @@
+flowchart BT
+    A{"<b>Document</b>"} -- rdf:type ---> D@{ label: "<span style=\"color:black\"><b>Document </b><br><b>ont00001298</b></span><br>" }
+    A -- has countinuant part<br>BFO:0000178 ---> E@{ label: "<span style=\"color:black\"><b>Document Field</b></span><br>" }
+    E -- rdf:type ---> F@{ label: "<span style=\"color:black\"><b>Document Field <br>ont00001243</b><br></span>" }
+    E -- designates <br> ont00001916 ---> H@{ label: "<font color=\"#000000\">Person</font>" }
+    H -- rdf:type ---> I@{ label: "<span style=\"color:black\"><b>Agent <br> BFO:00001017</b></span><br>" }
+    E -.has text value .-> n1["xsd:string"]
+
+    D@{ shape: rect}
+    E@{ shape: diamond}
+    F@{ shape: rect}
+    H@{ shape: diamond}
+    I@{ shape: rect}
+     A:::purple
+     D:::yellow
+     E:::purple
+     F:::yellow
+     H:::purple
+     I:::yellow
+    classDef yellow fill:#ffe680
+    classDef purple fill:#dbc9ef
+
