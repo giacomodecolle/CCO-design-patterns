@@ -1,9 +1,13 @@
+
 flowchart TB
     subgraph Legend
         A{Individual}
         B[Class]
         C[data]
         B --> |relation| C
+        DD[This pattern uses books as an example of how ICEs can depend on multiple
+        physical entities at the same time, but can be reused for other information entities 
+        such as information on computer systems or virtual documents]
     end
     classDef yellow fill:#ffe680
     classDef purple fill:#dbc9ef
@@ -18,11 +22,16 @@ flowchart TB
     IBE[Information Bearing Entity<br>ont00000253]:::yellow
 
     %% Instances
-    DOC1{Dorian Gray text}:::purple -->|rdf:type| ICE
-    PAPER{Dorian Gray physical copy}:::purple -->|rdf:type| IBE
-    IQ1{Ink shapes}:::purple -->|rdf:type| IQE
+    DOC1{Dorian Gray text content}:::purple -->|rdf:type| ICE
+    PAPER{Dorian Gray physical copy 1}:::purple -->|rdf:type| IBE
+    PAPER2{Dorian Gray physical copy 2}:::purple -->|rdf:type| IBE
+    IQ1{Ink shapes 1}:::purple -->|rdf:type| IQE
+    IQ2{Ink shapes 2}:::purple -->|rdf:type| IQE
 
     %% Relationships
-    DOC1 -->|bearer of - BFO_0000196| IQ1
-    PAPER -->|generically depends on - BFO_0000084| DOC1
-    IQ1 -->|concretizes - BFO_0000059| PAPER
+    PAPER -->|bearer of - BFO_0000196| IQ1
+    PAPER2 -->|bearer of - BFO_0000196| IQ2
+    DOC1 -->|generically depends on - BFO_0000084| PAPER
+    DOC1 -->|generically depends on - BFO_0000084| PAPER2
+    IQ1 -->|concretizes - BFO_0000059| DOC1
+    IQ2 -->|concretizes - BFO_0000059| DOC1
