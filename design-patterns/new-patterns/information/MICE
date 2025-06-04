@@ -6,11 +6,11 @@ flowchart TD
     A{"Measurement of tree length"} -- "rdf:type" --> B["Measurement Information Content Entity_00001163"]
     A -- generically_depends_on_0000084 --> C{"Piece_of_paper"}
     C -- "rdf:type" --> D["Information Bearing Entity_00000253"]
-    C -- is measurement of_00001966--> E{"Meters Measurement Unit"}
+    C -- uses measurement unit_00001863--> E{"Meters Measurement Unit"}
     C -- has decimal value_00001769 --> F["10.2"]
     E -- "rdf.type" --> G["measurement unit_00000120"]
     I{length} --> |rdf:type| H["Entity_0000001"]
-    A --> |is measurement unit of_00001961| I
+    A --> |is measurement of_00001966| I
 
     subgraph Legend
     AA{Individual}
