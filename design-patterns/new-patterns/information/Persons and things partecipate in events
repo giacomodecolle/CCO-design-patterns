@@ -1,0 +1,47 @@
+flowchart BT
+   Person1["Person1"] -- agent_in
+   BFO_0000107 --> Act1["Act of Educational
+   Training Acquisition 1"]
+   Edu1["Educational
+   Organization 1"] -- participates_in
+   BFO_0000056 --> Act1
+   Act1 -- occupies_temporal_region
+   BFO_000018 --> Interval1["Multi-year
+   Temporal Interval 1"]
+   Act1 -- has_process_part
+   BFO_0000051 --> Grad1["Graduation Event 1"]
+   Grad1 -- has_output
+   BFO_0000112 --> Degree1["Degree1"]
+   Grad1 -- occupies_temporal_region
+   BFO_0000187 --> Day1["Day1"]
+   Interval1 -- interval_finishes
+   BFO_0001581 --> Day1
+   Person1 -- rdfs:label --> JohnDoe["John Doe"]
+   Edu1 -- rdfs:label --> Ur["University of Rochester"]
+   Day1 -- rdfs:label --> Date["5/13/41"]
+
+
+   Person1@{ shape: diam}
+   Act1@{ shape: diam}
+   Edu1@{ shape: diam}
+   Interval1@{ shape: diam}
+   Grad1@{ shape: diam}
+   Degree1@{ shape: diam}
+   Day1@{ shape: diam}
+    Person1:::Purple
+    Act1:::Purple
+    Edu1:::Purple
+    Interval1:::Purple
+    Grad1:::Purple
+    Degree1:::Purple
+    Day1:::Purple
+    JohnDoe:::White
+    Ur:::White
+    Date:::White
+   classDef Purple fill:#dbc9ef,stroke:#000,stroke-width:1px
+   classDef White fill:#FFFFFF,stroke:none
+   style JohnDoe stroke-width:2px,stroke-dasharray: 0,stroke:#000000
+   style Ur stroke-width:2px,stroke-dasharray: 0,stroke:#000000
+   style Date stroke-width:2px,stroke-dasharray: 0,stroke:#000000
+
+
