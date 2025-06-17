@@ -6,7 +6,7 @@ flowchart BT
     E -. has text value <br> ont00001765 .-> n1["John"]
     n3@{ label: "<font color=\"#000000\">Designative ICE</font>" } -- rdf:type --> n4@{ label: "<font color=\"#000000\">Designative Name<br>ont00000003</font>" }
     n3 --is about<br>ont00001808--> H
-    E --designates<br>ont00001916--> n3
+    E --is about<br>ont00001808--> n3
 
     D@{ shape: rect}
     E@{ shape: diamond}
@@ -25,6 +25,3 @@ flowchart BT
      n4:::yellow
     classDef yellow fill:#ffe680
     classDef purple fill:#dbc9ef
-
-
-
