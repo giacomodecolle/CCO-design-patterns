@@ -2,13 +2,13 @@ flowchart TB
     A{Person 1} --->|rdf:type| B[BFO_0000001]
     A --->|participates in BFO_0000056| F{Change 1}
 
-    F --->|rdf:type| G[Change ont00000824]
+    F --->|rdf:type| G[Change ont00000004]
     F -->|occupies temporal region BFO_0000199| H{Temporal Interval 1}
     H --->|rdf:type| I[Temporal Interval BFO_0000202]
 
-
-    A -->|bearer of BFO_0000177| K{Temperature 1}
+    A -->|bearer of BFO_0000196| K{Temperature 1}
     K --->|rdf:type| L[Quality BFO_0000019]
+    K -->|participates in BFO_0000056| F{Change 1}
 
     M{Measurement 1 at t1} -->|rdf:type| N[Measurement Information Content Entity ont00001163]
     U -->|has decimal value ont00001769| O[36.6°C]
@@ -19,10 +19,10 @@ flowchart TB
     P -->|is a measurement of ont00001966| K
 
     S{IBE 1} -->|rdf:type| T[Information Bearing Entity ont00000253]
-    S -->|is carrier of BFO_0000084| M
+    S -->|is carrier of BFO_0000101| M
 
     U{IBE 2} -->|rdf:type| V[Information Bearing Entity ont00000253]
-    U -->|is carrier of BFO_0000084| P
+    U -->|is carrier of BFO_0000101| P
 
 subgraph Legend
 AA{Individual}
