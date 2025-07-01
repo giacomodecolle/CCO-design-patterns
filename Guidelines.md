@@ -9,3 +9,4 @@ This document contains general guidelines for the creation of design patterns (D
 - The DP needs to have instances named with human-readable names (such as the ones that one would use in a human-readable label). For example, "John" can serve as the name of an instance of class "Person". 
 - Instance names serve the purpose of providing an example of what in the world the class structure could be used to represent. Nevertheless, it is up to the author of the DP to make it clear that the structure can be reused for different cases as well.
 - The class structure will be specified at the most general level. For example, a DP illustrating specific dependence will use the class "Specifically Dependent Continuant", and not the class "Quality" or "Role"
+- All instances should have at least one parent class to make it clear where it fits in the BFO/CCO hierarchy.
