@@ -1,6 +1,6 @@
 flowchart BT
-    A{"William Stephens"} -- rdf:type --> F["Person
-    ont00001262"]
+    A{"William Stephens"} -- rdf:type --> F["Material Entity
+    BFO0000040"]
     A -- bearerOf_BFO0000196 --> H{"Student Role"}
     H -- rdf:type --> C["Role 
     BFO0000023"]
@@ -18,4 +18,18 @@ flowchart BT
     classDef DataColor stroke-width:1px, stroke-dasharray: 0, stroke:#AA00FF, fill:#FFFFFF
     classDef ClassColor stroke-width:1px, stroke-dasharray: 0, stroke:#AA00FF, fill:#FFF9C4
 
+    subgraph Legend
+    AA{Individual}
+    BB[Class]
+    CC[data]
+    BB --> |relation| CC
+    DD[This pattern demonstrates role contextualization by organizations. Note that this pattern uses the example of William Stephens, a person. However, any material entity may bear a role.] 
 
+     
+classDef yellow fill:#ffe680
+classDef purple fill:#dbc9ef
+classDef white fill:#ffffff
+class BB yellow
+class AA purple
+class CC white
+end
