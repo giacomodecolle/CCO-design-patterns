@@ -1,0 +1,29 @@
+---
+config:
+  layout: dagre
+---
+flowchart TD
+    id1{"agent 1"} -- rdf:type --> id2("agent")
+    id1 -- has capability --> id3{"agent capability 1"}
+    id3 -- rdf:type --> id4("agent capability")
+    id6{"planned act 1"} -- rdf:type --> id5("planned act")
+    id6 -- realizes --> id3
+    id8{"directive information content entity"} -- rdf:type --> id7("directive information content entity")
+    id8 -- prescribes --> id6
+    id1 -- participates in --> id6
+     id1:::Class_02
+     id2:::Class_07
+     id3:::Class_06
+     id4:::Class_08
+     id6:::Class_05
+     id5:::Class_10
+     id8:::Class_04
+     id7:::Class_09
+    classDef Class_02 fill:#dbc9ef
+    classDef Class_04 fill:#dbc9ef
+    classDef Class_05 fill:#dbc9ef
+    classDef Class_06 fill:#dbc9ef
+    classDef Class_07 fill:#ffe680
+    classDef Class_08 fill:#ffe680
+    classDef Class_09 fill:#ffe680
+    classDef Class_10 fill:#ffe680
