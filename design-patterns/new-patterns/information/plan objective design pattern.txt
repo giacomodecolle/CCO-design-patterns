@@ -1,0 +1,5 @@
+flowchart TD
+id1(directive information content entity)
+id1--has subclass-->id2(plan)
+id1--has subclass-->id3(objective)
+id2--has continuant part-->id3
