@@ -1,21 +1,15 @@
 # Pattern Name
 
-## Competency Question
+## Competency Questions
 
 ## Intent
-Short statement of the purpose.
-
-## Motivation
-Real-world problem or scenario.
+- Short statement of the purpose.
+- Real-world problem or scenario.
 
 ## Structure
 - Visual model through mermaid and png
 - Explanation of parts
 
-## Usage?
+## Additional Notes
+- Related patterns (when needed)
 
-## Related Patterns
-- List and link
-
-## Consequences
-- Pros, cons, impact
