@@ -1,5 +1,7 @@
 # Pattern Name
 
+## Competency Question
+
 ## Intent
 Short statement of the purpose.
 
