@@ -5,9 +5,8 @@ flowchart BT
     H@{ label: "<font color=\"#000000\">Person</font>" } -- rdf:type ---> I@{ label: "<span style=\"color:black\"><b>Agent <br> ont00001017</b></span><br>" }
     E -. has text value <br> ont00001765 .-> n1["John"]
     n3@{ label: "<font color=\"#000000\">Designative ICE</font>" } -- rdf:type --> n4@{ label: "<font color=\"#000000\">Designative Name<br>ont00000003</font>" }
-    n3 --is about<br>ont00001808--> H
-    E --is about<br>ont00001808--> n3
-
+    n3 -- designates <br>ont00001916 --> H
+    E -- generically depends on<br>BFO_00000084 --> n3
     D@{ shape: rect}
     E@{ shape: diamond}
     F@{ shape: rect}
@@ -21,7 +20,9 @@ flowchart BT
      F:::yellow
      H:::purple
      I:::yellow
+     n1:::white
      n3:::purple
      n4:::yellow
     classDef yellow fill:#ffe680
     classDef purple fill:#dbc9ef
+    classDef white fill:#FFFFFF
