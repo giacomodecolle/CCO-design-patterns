@@ -1,11 +1,15 @@
-
 # Pattern Name
 Document Field
 
 ## Compentency Questions
+What document is this document field apart of?
+
+What is the name on this document field?
+
+How many document fields are in the document?
 
 ## Intent
-The purpose of this model is to show the relation between a ICE and a object bearing this information. 
+Showing the document field is a part of a document
 
 This would come in hand when representing documents in multiple fields.
 
