@@ -1,6 +1,7 @@
 # Pattern Name
 
 ## Competency Questions
+- Needs to be a question
 
 ## Intent
 - Short statement of the purpose.
@@ -12,4 +13,3 @@
 
 ## Additional Notes
 - Related patterns (when needed)
-
