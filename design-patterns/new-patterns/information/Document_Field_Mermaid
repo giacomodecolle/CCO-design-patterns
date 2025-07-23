@@ -2,11 +2,11 @@ flowchart BT
     A{"<b>Document</b>"} -- rdf:type ---> D@{ label: "<span style=\"color:black\"><b>Document </b><br><b>ont00001298</b></span><br>" }
     A -- has continuant part<br>BFO:0000178 ---> E@{ label: "<span style=\"color:black\"><b>Document Field</b></span><br>" }
     E -- rdf:type ---> F@{ label: "<span style=\"color:black\"><b>Document Field <br>ont00001243</b><br></span>" }
-    H@{ label: "<font color=\"#000000\">Person</font>" } -- rdf:type ---> I@{ label: "<span style=\"color:black\"><b>Agent <br> ont00001017</b></span><br>" }
+    H@{ label: "<font color=\"#000000\">Agent 1</font>" } -- rdf:type ---> I@{ label: "<span style=\"color:black\"><b>Agent <br> ont00001017</b></span><br>" }
     E -. has text value <br> ont00001765 .-> n1["John"]
-    n3@{ label: "<font color=\"#000000\">Designative ICE</font>" } -- rdf:type --> n4@{ label: "<font color=\"#000000\">Designative Name<br>ont00000003</font>" }
+    n3@{ label: "<font color=\"#000000\">Designative Name 1</font>" } -- rdf:type --> n4@{ label: "<font color=\"#000000\"><b>Designative Name<br>ont00000003</font>" }
     n3 -- designates <br>ont00001916 --> H
-    E -- generically depends on<br>BFO_00000084 --> n3
+    E -- is carrier of<br>BFO_0000101 --> n3
     D@{ shape: rect}
     E@{ shape: diamond}
     F@{ shape: rect}
