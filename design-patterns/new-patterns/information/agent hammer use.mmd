@@ -1,0 +1,37 @@
+flowchart BT
+
+id1{agent 1}--rdf:type-->id5(agent 
+ont00001017)
+id2{hammer}--rdf:type-->id3(material artifact ont00000995)
+id1--uses 
+ont00001813-->id2
+id6{hammering}--rdf:type-->id4(planned act 
+ont00000228)
+id1--participates in BFO:0000056-->id6
+id2--participates in BFO:0000056-->id6
+id1:::Class_01
+classDef Class_01 fill:#dbc9ef
+id2:::Class_02
+classDef Class_02 fill:#dbc9ef
+id3:::Class_03
+classDef Class_03 fill:#ffe680
+id4:::Class_04
+classDef Class_04 fill:#ffe680
+id5:::Class_05
+classDef Class_05 fill:#ffe680
+id6:::Class_06
+classDef Class_06 fill:#dbc9ef
+
+subgraph Legend
+    AA{Individual}
+    BB[Class]
+    CC[data]
+    BB --> |relation| CC
+    DD[This design pattern is meant to represent how an agent utilizes a material artifact in a planned act]
+    classDef yellow fill:#ffe680
+classDef purple fill:#dbc9ef
+classDef white fill:#ffffff
+class BB yellow
+class AA purple
+class CC white
+    end
