@@ -1,10 +1,13 @@
-flowchart TD
-id1(directive information content entity)
-id2(plan)--subclass of-->id1
-id3(objective)--subclass of-->id1
-id4{plan 1}--rdf:type-->id2
-id5{objective 1}--rdf:type-->id3
-id4--has continuant part-->id5
+flowchart BT
+id1(directive information content entity 
+ont00000965)
+id2(plan 
+ont00000974)--subclass of-->id1
+id3(objective 
+ont00000476)--subclass of-->id1
+id4{battle plan}--rdf:type-->id2
+id5{victory}--rdf:type-->id3
+id4--has continuant part BFO:0000178-->id5
 id1:::Class_01
 classDef Class_01 fill:#ffe680
 id2:::Class_02
@@ -14,4 +17,17 @@ classDef Class_03 fill:#ffe680
 id4:::Class_04
 classDef Class_04 fill:#dbc9ef
 id5:::Class_05
-classDef Class_05 fill:#dbc9ef
+classDef Class_05 fill:#dbc9ef 
+subgraph Legend
+    AA{Individual}
+    BB[Class]
+    CC[data]
+    BB --> |relation| CC
+    DD[This design pattern shows the relationship between plans and their associated objectives]
+    classDef yellow fill:#ffe680
+classDef purple fill:#dbc9ef
+classDef white fill:#ffffff
+class BB yellow
+class AA purple
+class CC white
+    end
