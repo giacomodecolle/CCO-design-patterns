@@ -1,3 +1,4 @@
+```mermaid
 flowchart BT
     B{"June 24th, 2025 5pm-7:30pm PST"} -- rdf:type --> E["Temporal Region BFO_0000008"]
     B -- isTemporalRegionOf_ont00001874 --> A{"Marriage of William and Jennifer"}
@@ -26,3 +27,4 @@ class BB yellow
 class AA purple
 class CC white
 end
+```
