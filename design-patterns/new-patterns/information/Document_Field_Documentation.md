@@ -4,7 +4,7 @@ Document Field
 ## Compentency Questions
 What document is this document field a part of?
 
-What is the name on this document field?
+What is the content on this document field?
 
 How many document fields are in the document?
 
