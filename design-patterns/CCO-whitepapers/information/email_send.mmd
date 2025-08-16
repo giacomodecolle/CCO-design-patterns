@@ -1,0 +1,26 @@
+graph BT
+    B{Email Content 1} -->|rdf:type| E[Descriptive Information Content Entity<br>ont00000853]
+    B -->|describes<br>ont00001982| F{Hurricane 1}
+    F -->|rdf:type| G[Process<br>BFO_0000015]
+
+    H{Server} -->|rdf:type| C[Information Bearing Entity<br>ont00000253]
+    I{Laptop} -->|rdf:type| C[Information Bearing Entity<br>ont00000253]
+    L{Personal Computer} -->|rdf:type| C[Information Bearing Entity<br>ont00000253]
+
+    B -->|generically depends on<br>BFO_0000084| H
+    B -->|generically depends on<br>BFO_0000084| I
+    B -->|generically depends on<br>BFO_0000084| L
+
+    B --> |participates in| M{Act of Communication 1}
+    H --> |participates in| M
+
+    M --> |has sender| I
+    M --> |has recipient| L
+
+classDef yellow fill:#ffe680
+classDef purple fill:#dbc9ef
+classDef white fill:#ffffff
+
+class C,E,G yellow
+class A,B,F,H,I,L,M purple
+class D white
