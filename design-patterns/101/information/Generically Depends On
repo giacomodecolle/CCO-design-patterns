@@ -1,0 +1,14 @@
+graph BT
+    B{John Doe's Name 1} -->|rdf:type| E[Information Content Entity<br>ont00000958]
+    B -->|generically depends on<br>BFO_0000084| A{Document Field 1}
+    A -->|rdf:type| C[Document Field<br>ont00001243]
+    A -->|has text value<br>ont00001765| D[John Doe]
+    C -->|rdfs:subClassOf| F[Information Bearing Entity<br>ont00000253]
+
+classDef yellow fill:#ffe680
+classDef purple fill:#dbc9ef
+classDef white fill:#ffffff
+
+class C,E,F yellow
+class A,B purple
+class D white

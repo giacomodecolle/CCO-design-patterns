@@ -1,0 +1,11 @@
+graph BT
+    B{John Doe's Name 1} -->|rdf:type| E[Information Content Entity<br>ont00000958]
+    B -->|is tokenized by<br>ont00001761| D[John Doe]
+
+classDef yellow fill:#ffe680
+classDef purple fill:#dbc9ef
+classDef white fill:#ffffff
+
+class E yellow
+class B purple
+class D white
