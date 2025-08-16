@@ -1,0 +1,45 @@
+graph TB
+
+    B{Person 1's Name} -->|rdf:type| E[Designative Information Content Entity<br>ont00000686]
+    B -->|generically depends on<br>BFO_0000084| A{Document Field 1}
+    A -->|rdf:type| C[Information Bearing Entity<br>ont00000253]
+    A -->|has text value<br>ont00001765| D[John Doe]
+    B -->|designates<br>ont00001916| F{Person 1}
+    F -->|rdf:type| G[Entity<br>BFO_0000001]
+    
+
+classDef yellow fill:#ffe680
+classDef purple fill:#dbc9ef
+classDef white fill:#ffffff
+
+class C,E,G yellow
+class A,B,F purple
+class D whit
+classDef yellow fill:#ffe680
+classDef purple fill:#dbc9ef
+classDef white fill:#ffffff
+
+class C,E,G,H yellow
+class A,B,F purple
+class D white
+
+
+subgraph Legend
+    AA{Individual}
+    BB[Class]
+    CC[data]
+    BB --> |relation| CC
+    DD[This pattern uses person names as examples but can be reused for different type of identifiers such as codes, IDs,...] 
+
+classDef yellow fill:#ffe680
+classDef purple fill:#dbc9ef
+classDef white fill:#ffffff
+class BB yellow
+class AA purple
+class CC white
+end
+
+classDef yellow fill:#ffe680 
+classDef purple fill:#dbc9ef 
+classDef white fill:#ffffff 
+
