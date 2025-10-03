@@ -1,3 +1,4 @@
+```mermaid
 graph BT
     A{Measurement of Pencil Mass 1} --->|rdf:type| B[Measurement Information Content Entity
     ont00001163]
@@ -13,3 +14,5 @@ graph BT
     class B,D,F yellow
     class A,C,E purple
     class G white
+
+

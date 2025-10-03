@@ -1,7 +1,5 @@
----
-config:
-  theme: redux
----
+`` mermaid
+
 flowchart TD
     A{"Measurement of tree length"} -- "rdf:type" --> B["Measurement Information Content Entity_00001163"]
     A -- generically_depends_on_0000084 --> C{"Piece_of_paper"}
