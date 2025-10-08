@@ -1,3 +1,5 @@
+```mermaid
+
 graph BT
     A{Hour-Long
     Temporal Region 1} -->|rdf:type| B[Temporal Region BFO_0000008]
@@ -15,3 +17,4 @@ graph BT
     classDef purple fill:#dbc9ef
     class B,E yellow
     class A,C,D purple
+
