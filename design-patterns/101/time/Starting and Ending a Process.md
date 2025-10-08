@@ -1,3 +1,5 @@
+```mermaid
+
 graph BT
     A{Flight Take-Off} --->|rdf:type| B[Process Beginning ont00000197]
     A --->|temporal part of BFO_0000139| C{Flight from Tokyo to Paris}
@@ -10,3 +12,4 @@ graph BT
     classDef purple fill:#dbc9ef
     class B,E,F yellow
     class A,C,D purple
+
