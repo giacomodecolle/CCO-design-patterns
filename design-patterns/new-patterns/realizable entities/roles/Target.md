@@ -1,3 +1,5 @@
+```mermaid
+
 flowchart TB
  subgraph Legend["Legend"]
         AA{"Individual"}
