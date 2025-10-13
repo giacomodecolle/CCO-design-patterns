@@ -1,4 +1,4 @@
-'''mermaid
+```mermaid
 
 flowchart TD
   %% === ATTACK SUBGRAPH ===
