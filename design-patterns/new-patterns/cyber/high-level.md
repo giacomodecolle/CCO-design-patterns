@@ -82,7 +82,7 @@ flowchart TD
     CC[data]
     EE[CCO superclass]
     BB --> |relation| CC
-    DD[This pattern uses numbered instances but can be reused for other scenarios]
+    DD[This is a high-level pattern of D3FEND which represents how attacking and defensive techniques are implemented to attack and defend digital artifacts]
   end
 
   %% === STYLING ===
