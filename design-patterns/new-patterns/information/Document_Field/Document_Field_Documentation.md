@@ -1,7 +1,7 @@
 # Pattern Name
 Document Field
 
-## Compentency Questions
+## Competency Questions
 1) What document is this document field a part of?
 
 2) How many document fields are in the document?
