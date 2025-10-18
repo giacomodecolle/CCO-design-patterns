@@ -45,7 +45,7 @@ flowchart TD
     DefensiveTechnique1{DefensiveTechnique1}
     DefensiveAction1{DefensiveAction1}
     DefensiveTactic1{DefensiveTactic1}
-    Label1[[Label1]]
+
 
     %% Type assertions
     DefensiveTechnique1 -->|rdf type| DefensiveTechnique
@@ -56,7 +56,6 @@ flowchart TD
     DefensiveAction1 -->|has participant| DigitalArtifact1
     DefensiveAction1 -->|implements| DefensiveTechnique1
     DefensiveTechnique1 -->|enables| DefensiveTactic1
-    DigitalArtifact1 -->|has label| Label1
   end
 
   %% === CCO SUPERCLASSES ===
