@@ -6,7 +6,7 @@ flowchart TD
     direction TB
     %% Classes
     OffensiveAction[Offensive Action]
-    Attacker[Attacker]
+    Attacker[Agent]
     OffensiveTechnique[Offensive Technique]
     OffensiveTactic[Offensive Tactic]
     DigitalArtifact[Digital Artifact]
