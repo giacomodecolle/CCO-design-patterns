@@ -17,6 +17,7 @@ flowchart TD
     OffensiveTechnique1{OffensiveTechnique1}
     OffensiveTactic1{OffensiveTactic1}
     DigitalArtifact1{DigitalArtifact1}
+    DigitalEvent1{DigitalEvent1}
 
     %% Type assertions
     OffensiveAction1 -->|rdf type| OffensiveAction
@@ -24,6 +25,7 @@ flowchart TD
     OffensiveTechnique1 -->|rdf type| OffensiveTechnique
     OffensiveTactic1 -->|rdf type| OffensiveTactic
     DigitalArtifact1 -->|rdf type| DigitalArtifact
+    DigitalEvent1 -->|rdf type| DigitalEvent
 
     %% Relations between instances (attack)
     OffensiveAction1 -->|has agent| Attacker1
@@ -57,6 +59,9 @@ flowchart TD
     DefensiveAction1 -->|implements| DefensiveTechnique1
     DefensiveTechnique1 -->|enables| DefensiveTactic1
   end
+  OffensiveAction1 -->|causes| DigitalEvent1
+  DigitalEvent1 -->|produces| DigitalArtifact1
+
 
   %% === CCO SUPERCLASSES ===
   subgraph CCO
@@ -91,8 +96,8 @@ flowchart TD
   classDef grey fill:#d9d9d9,stroke:#333,stroke-width:1px;
 
   %% Assign colors
-  class OffensiveAction,Attacker,OffensiveTechnique,OffensiveTactic,DigitalArtifact,DefensiveTechnique,DefensiveAction,DefensiveTactic yellow
-  class OffensiveAction1,Attacker1,OffensiveTechnique1,OffensiveTactic1,DigitalArtifact1,DefensiveTechnique1,DefensiveAction1,DefensiveTactic1 purple
+  class OffensiveAction,Attacker,OffensiveTechnique,OffensiveTactic,DigitalArtifact,DefensiveTechnique,DefensiveAction,DefensiveTactic,DigitalEvent yellow
+  class OffensiveAction1,Attacker1,OffensiveTechnique1,OffensiveTactic1,DigitalArtifact1,DefensiveTechnique1,DefensiveAction1,DefensiveTactic1,DigitalEvent1 purple
   class Label1 white
   class CCOProcess,CCOPlan grey
 
