@@ -78,6 +78,7 @@ flowchart TD
   OffensiveTactic -->|rdfs:subClassOf| CCOPlan
   DefensiveTechnique -->|rdfs:subClassOf| CCOPlan
   DefensiveTactic -->|rdfs:subClassOf| CCOPlan
+  DigitalEvent -->|rdfs:subClassOf| CCOProcess
 
   %% === LEGEND ===
   subgraph Legend
