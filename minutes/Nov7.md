@@ -1,4 +1,4 @@
-Regina reports on the work done with Ray and Noor on collecting competency questions to develop narratives design patterns. 
+Regina reports on the work done with Ray and Nour on collecting competency questions to develop narratives design patterns. 
 
 The group debated differences between different types of narratives and its meaning (GDC vs process). Regina has been working on solitude and modeled it.
 
