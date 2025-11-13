@@ -1,0 +1,1 @@
+Patterns for cybersecurity, using D3FEND and to be mapped into CCO via the official D3FEND-CCO mappings.
