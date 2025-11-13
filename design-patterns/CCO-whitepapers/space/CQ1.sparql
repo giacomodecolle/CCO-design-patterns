@@ -1,0 +1,16 @@
+#CQ1: Where is a specific facility located?
+
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> 
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> 
+PREFIX cco: <https://www.commoncoreontologies.org/> 
+PREFIX obo: <http://purl.obolibrary.org/obo/> 
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+
+SELECT ?facility ?facilityLabel ?location ?locationLabel
+WHERE {
+  ?facility rdf:type cco:ont00000192 ;
+            rdfs:label "Empire State Building" ;
+            obo:BFO_0000171 ?location .
+  ?location rdfs:label ?locationLabel .
+  BIND("Empire State Building" AS ?facilityLabel)
+}
