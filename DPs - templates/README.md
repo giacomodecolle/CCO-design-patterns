@@ -1,4 +1,4 @@
-# Templates for DPs Folder Design 
+# Templates and guidelines for DPs Design 
 
 This directory contains templates and guidelines to organize DPs folders, specifically a template for the README file, a template for DP in Mermaid and PNG/SVG format, and a template for SPARQL queries.
 
