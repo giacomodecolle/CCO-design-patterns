@@ -1,0 +1,14 @@
+# CQ2: What bigger site is this facility located in, and are there smaller sites 
+# that the facility is also located in that are within the bigger site?
+# Uses property paths to find the full location hierarchy
+
+SELECT ?facility ?facilityLabel ?immediateSite ?immediateSiteLabel ?largerSite ?largerSiteLabel
+WHERE {
+    ?facility a :Facility ;
+              rdfs:label ?facilityLabel ;
+              BFO:0000171 ?immediateSite .
+    ?immediateSite rdfs:label ?immediateSiteLabel ;
+                   BFO:0000171+ ?largerSite .
+    ?largerSite rdfs:label ?largerSiteLabel .
+}
+ORDER BY ?facility ?largerSite

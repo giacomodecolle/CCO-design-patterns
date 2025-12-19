@@ -1,0 +1,10 @@
+# CQ1: Where is a specific facility located?
+# Returns the immediate site(s) where a given facility is located
+
+SELECT ?facility ?facilityLabel ?site ?siteLabel
+WHERE {
+    ?facility a :Facility ;
+              rdfs:label ?facilityLabel ;
+              BFO:0000171 ?site .
+    ?site rdfs:label ?siteLabel .
+}
