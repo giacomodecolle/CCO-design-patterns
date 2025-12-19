@@ -91,7 +91,7 @@ facility-location/
 | File | Competency Question |
 |------|---------------------|
 | `CQ1.sparql` | Where is a specific facility located? |
-| `CCQ2.sparql` | What bigger site is this facility located in, and are there smaller sites that the facility is located in that are also located in the bigger site? |
+| `CQ2.sparql` | What bigger site is this facility located in, and are there smaller sites that the facility is located in that are also located in the bigger site? |
 | `CQ3.sparql` | What are all the facilities located within a particular site? |
 | `example.ttl` | Turtle file with test instances (states, cities, campuses, buildings, facilities) |
 
