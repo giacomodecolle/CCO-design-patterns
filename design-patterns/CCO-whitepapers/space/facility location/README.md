@@ -3,7 +3,7 @@ Facility Location
 
 # Intent
 
-To represent location relationships where material entities (e.g., facilities, equipment, infrastructure) are situated within progressively larger geographic regions or sites (e.g., building → campus → city → state → country), enabling multi-level location queries and reasoning. The specific entity types and site hierarchies shown are examples—this pattern generalizes to any material entity that can be located at sites, and any hierarchical organization of sites.
+To represent location relationships where material entities (e.g., facilities, equipment, infrastructure) are situated within progressively larger geographic regions or sites (e.g., building → campus → city → state → country), enabling multi-level location queries and reasoning. The specific entity types and site hierarchies shown are examples. This pattern generalizes to any material entity that can be located at sites, and any hierarchical organization of sites.
 
 # Competency Questions
 
