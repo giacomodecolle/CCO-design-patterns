@@ -70,12 +70,12 @@ flowchart BT
 facility-location/
 ├── README.md
 ├── mermaid/
-│   ├── facility-location.mmd        # Mermaid source file
-│   └── facility-location.png        # Exported PNG diagram
+│   ├── FacilityLocation.md        # Mermaid source file
+│   └── FacilityLocation.png        # Exported PNG diagram
 └── sparql/
-    ├── CQ1-facility-location.rq     # Where is a specific facility located?
-    ├── CQ2-site-hierarchy.rq        # What larger/smaller sites contain this facility?
-    ├── CQ3-facilities-in-site.rq    # What facilities are within a particular site?
+    ├── CQ1.sparql     # Where is a specific facility located?
+    ├── CQ2.sparql        # What larger/smaller sites contain this facility?
+    ├── CQ3.sparql    # What facilities are within a particular site?
     └── example.ttl                  # Test data for SPARQL queries
 ```
 
@@ -84,15 +84,15 @@ facility-location/
 ### mermaid/
 | File | Description |
 |------|-------------|
-| `facility-location.mmd` | Mermaid diagram source showing the pattern structure |
-| `facility-location.png` | PNG export of the diagram for documentation |
+| `FacilityLocation.md` | Mermaid diagram source showing the pattern structure |
+| `FacilityLocation.png` | PNG export of the diagram for documentation |
 
 ### sparql/
 | File | Competency Question |
 |------|---------------------|
-| `CQ1-facility-location.rq` | Where is a specific facility located? |
-| `CQ2-site-hierarchy.rq` | What bigger site is this facility located in, and are there smaller sites that the facility is located in that are also located in the bigger site? |
-| `CQ3-facilities-in-site.rq` | What are all the facilities located within a particular site? |
+| `CQ1.sparql` | Where is a specific facility located? |
+| `CCQ2.sparql` | What bigger site is this facility located in, and are there smaller sites that the facility is located in that are also located in the bigger site? |
+| `CQ3.sparql` | What are all the facilities located within a particular site? |
 | `example.ttl` | Turtle file with test instances (states, cities, campuses, buildings, facilities) |
 
 # Additional Notes
