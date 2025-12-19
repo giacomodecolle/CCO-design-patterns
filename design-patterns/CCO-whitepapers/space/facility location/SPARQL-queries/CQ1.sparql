@@ -3,8 +3,8 @@
 
 SELECT ?facility ?facilityLabel ?site ?siteLabel
 WHERE {
-    ?facility a :Facility ;
+    ?facility a cco:ont00000192 ;
               rdfs:label ?facilityLabel ;
-              BFO:0000171 ?site .
+              obo:BFO_0000171 ?site .
     ?site rdfs:label ?siteLabel .
 }

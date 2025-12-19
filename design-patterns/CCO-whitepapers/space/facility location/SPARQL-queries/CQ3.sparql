@@ -3,10 +3,10 @@
 
 SELECT ?site ?siteLabel ?facility ?facilityLabel
 WHERE {
-    ?site a BFO:0000029 ;
+    ?site a obo:BFO_0000029 ;
           rdfs:label ?siteLabel .
-    ?facility a :Facility ;
+    ?facility a cco:ont00000192 ;
               rdfs:label ?facilityLabel ;
-              BFO:0000171+ ?site .
+              obo:BFO_0000171+ ?site .
 }
 ORDER BY ?site ?facility

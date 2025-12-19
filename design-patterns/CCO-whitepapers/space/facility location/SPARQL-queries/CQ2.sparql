@@ -4,11 +4,11 @@
 
 SELECT ?facility ?facilityLabel ?immediateSite ?immediateSiteLabel ?largerSite ?largerSiteLabel
 WHERE {
-    ?facility a :Facility ;
+    ?facility a cco:ont00000192 ;
               rdfs:label ?facilityLabel ;
-              BFO:0000171 ?immediateSite .
+              obo:BFO_0000171 ?immediateSite .
     ?immediateSite rdfs:label ?immediateSiteLabel ;
-                   BFO:0000171+ ?largerSite .
+                   obo:BFO_0000171+ ?largerSite .
     ?largerSite rdfs:label ?largerSiteLabel .
 }
 ORDER BY ?facility ?largerSite
