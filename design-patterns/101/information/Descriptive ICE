@@ -1,0 +1,9 @@
+graph BT
+    A{Hurricane 1} -->|rdf:type| D[Process<br>BFO_0000015]
+    B{Hurricane Description 1} -->|rdf:type| E[Descriptive Information Content Entity<br>ont00000853]
+    B -->|describes<br>ont00001982| A
+
+classDef yellow fill:#ffe680
+classDef purple fill:#dbc9ef
+class D,E yellow
+class A,B purple
