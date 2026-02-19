@@ -1,0 +1,62 @@
+flowchart BT
+    Person1["Person1"] -- agent_in 
+    BFO_00001787 --> Act1["Act of Educational Training Acquisition 1"]
+    Edu1["Educational Organization 1"] -- participates_in 
+    BFO_0000056 --> Act1
+    Act1 -- occupies_temporal_region 
+    BFO_0000199 --> Interval1["Multi-year Temporal Interval 1"]
+    Interval1 -- is_a --> TemporalRegion["Temporal Region BFO_0000008"]
+    Act1 -- is_a --> Process["Process 
+    BFO_0000015"]
+    Act1 -- has_process_part 
+    BFO_00001777 --> Grad1["Graduation Event 1"]
+    Grad1 -- is_a --> Process
+    Grad1 -- has_output 
+    BFO_00001986 --> Degree1["Degree1"]
+    Grad1 -- occupies_temporal_region 
+    BFO_0000199 --> Day1["Day1"]
+    Day1 -- is_a --> TemporalRegion
+    Interval1 -- interval_finishes 
+    BFO_0001814 --> Day1
+    Person1 -- rdfs:label --> JohnDoe["John Doe"]
+    Edu1 -- rdfs:label --> Ur["University of Rochester"]
+    Day1 -- rdfs:label --> Date["5/13/41"]
+
+    Person1@{ shape: diam}
+    Act1@{ shape: diam}
+    Edu1@{ shape: diam}
+    Interval1@{ shape: diam}
+    TemporalRegion@{ shape: rect}
+    Process@{ shape: rect}
+    Grad1@{ shape: diam}
+    Degree1@{ shape: diam}
+    Day1@{ shape: diam}
+     Person1:::purple
+     Act1:::purple
+     Edu1:::purple
+     Interval1:::purple
+     TemporalRegion:::yellow
+     Process:::yellow
+     Grad1:::purple
+     Degree1:::purple
+     Day1:::purple
+     JohnDoe:::white
+     Ur:::white
+     Date:::white
+    classDef yellow fill:#ffe680
+    classDef purple fill:#dbc9ef
+    classDef white fill:#ffffff
+    style Person1 stroke:#000000
+    style Act1 stroke:#000000
+    style Edu1 stroke:#000000
+    style Interval1 stroke:#000000
+    style TemporalRegion stroke:#000000
+    style Process stroke:#000000
+    style Grad1 stroke:#000000
+    style Degree1 stroke:#000000
+    style Day1 stroke:#000000
+    style JohnDoe stroke-width:2px,stroke-dasharray: 0,stroke:#000000
+    style Ur stroke-width:2px,stroke-dasharray: 0,stroke:#000000
+    style Date stroke-width:2px,stroke-dasharray: 0,stroke:#000000
+
+
