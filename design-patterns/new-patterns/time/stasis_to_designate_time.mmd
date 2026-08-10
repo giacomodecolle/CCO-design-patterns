@@ -1,0 +1,32 @@
+flowchart TB
+        A{Person 1} --->|rdf:type| B[BFO_0000001]
+        A --->|participates in BFO_0000056| F{Stasis 1}
+
+        F --->|rdf:type| G[Stasis ont00000824]
+        F -->|occupies temporal region BFO_0000199| H{Temporal Interval 1}
+        H --->|rdf:type| I[Temporal Interval BFO_0000202]
+        J[July 4]
+
+        L{Info 1} --> |rdf:type| M[Designative Information Content Entity ont00000686]
+        L --> |generically depends on BFO_0000084| N{Bearer 1}
+        N --> |rdf:type| O[Information Bearing Entity ont00000253]
+        O --> |has date value ont00001771| J
+        L --> |designates ont00001916| H
+
+
+    subgraph Legend
+    AA{Individual}
+    BB[Class]
+    CC[data]
+    BB --> |relation| CC
+    DD[This pattern uses stasis as a way to time-index entities. This allows to express ternary relations in OWL, for example by saying that a person bears a role at t1, see role stasis pattern. The example uses person but it could be whatever entity] 
+     
+
+classDef yellow fill:#ffe680
+classDef purple fill:#dbc9ef
+classDef white fill:#ffffff
+class BB,B,G,I,M,O yellow
+class AA,A,F,H,L,N purple
+class CC,J white
+end
+
